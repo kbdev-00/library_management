@@ -1,0 +1,51 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd29b36bb3, pid=28232, tid=23468
+#
+# JRE version: OpenJDK Runtime Environment Temurin-21.0.12.1+1 (21.0.12.1+1) (build 21.0.12.1+1-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (21.0.12.1+1-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, parallel gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3e6bb3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -Dm2e.project.cache.size=50 -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:c:\Users\bhask\.vscode\extensions\redhat.java-1.56.0-win32-x64\lombok\lombok-1.18.39-4050.jar c:\Users\bhask\.vscode\extensions\redhat.java-1.56.0-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.8.0.v20260804-1928.jar -configuration c:\Users\bhask\AppData\Roaming\Code\User\globalStorage\redhat.java\1.56.0\config_ss_win -data c:\Users\bhask\AppData\Roaming\Code\User\workspaceStorage\7ffd22da31b0fc8c60a2257d2c7c09d0\redhat.java\ss_ws --pipe=\\.\pipe\lsp-a00616e4baa3dc4a02ca92b8c1aaaeac-sock
+
+Host: AMD Ryzen 5 5500U with Radeon Graphics         , 12 cores, 5G,  Windows 11 , 64 bit Build 26100 (10.0.26100.9444)
+Time: Wed Sep 23 18:04:04 2026 India Standard Time elapsed time: 15.991238 seconds (0d 0h 0m 15s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000270f5b60050):  JavaThread "Worker-2: Building"        [_thread_in_vm, id=23468, stack(0x000000a785300000,0x000000a785400000) (1024K)]
+
+Stack: [0x000000a785300000,0x000000a785400000],  sp=0x000000a7853fa480,  free space=1001k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3e6bb3]
+V  [jvm.dll+0x6d8302]
+V  [jvm.dll+0x3e781b]
+V  [jvm.dll+0x3e79e8]
+V  [jvm.dll+0x82edb1]
+V  [jvm.dll+0x82fc8b]
+V  [jvm.dll+0x830254]
+V  [jvm.dll+0x82fee8]
+V  [jvm.dll+0x89faa3]
+V  [jvm.dll+0x89f66f]
+V  [jvm.dll+0x7ab046]
+V  [jvm.dll+0x7ab1d9]
+V  [jvm.dll+0x7ac084]
+V  [jvm.dll+0x8a9d87]
+V  [jvm.dll+0x8a654e]
+V  [jvm.dll+0x8a1fc6]
+V  [jvm.dll+0x3ccb68]
+V  [jvm.dll+0x3cb967]
+V  [jvm.dll+0x3cb908]
+V  [jvm.dll+0x5ddcd6]
+V  [jvm.dll+0x5dcc44]
+V  [jvm.dll+0x3e1012]
